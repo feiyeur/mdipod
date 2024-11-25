@@ -1,0 +1,33 @@
+{
+  "name": "mdipod",
+  "author": "feiyeur <fishyua@outlook.com>",
+  "private": "true",
+  "version": "0.0",
+  "type": "module",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsx index.ts",
+    "build:all": "tsx index.ts all",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.2.10",
+    "prettier": "3.3.3",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@material/material-color-utilities": "^0.3.0",
+    "canvas": "^2.11.2",
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "pino": "^9.5.0",
+    "tsx": "^4.19.2",
+    "winston": "^3.17.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
